@@ -1,0 +1,8 @@
+{
+  "n_docs": 50,
+  "n_qa": 305,
+  "qa_per_doc_avg": 6.1,
+  "model": "gpt-5.4-mini",
+  "temperature": 0.3,
+  "ts": "2026-05-27T13:46:59Z"
+}

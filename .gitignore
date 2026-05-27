@@ -1,0 +1,41 @@
+# 环境
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# 大文件（>10MB）
+data/raw/sources.jsonl
+data/raw/manifest.json
+
+# 中间产物（蒸馏 / 过滤 / 评审）—— 进仓库便于复现
+# data/distilled/  ← 进
+# data/filtered/   ← 进
+# data/judged/     ← 进
+# data/processed/  ← 进（最终发布版）
+
+# 抽检产物 / 日志
+reports/review_sample.jsonl  # 单独的 jsonl 不进
+*.log
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+
+# 测试 / 缓存
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+
+# 旧脚本占位文件
+data/raw/.gitkeep
+data/processed/.gitkeep
+data/distilled/.gitkeep
+data/filtered/.gitkeep

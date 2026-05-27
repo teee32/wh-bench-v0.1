@@ -1,0 +1,50 @@
+[project]
+name = "wh-bench"
+version = "0.1.0"
+description = "中文工业安全规程问答评测集 (Chinese Industrial Safety Regulation QA Benchmark)"
+authors = [{ name = "kksk2312", email = "noreply@huggingface.co" }]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "CC-BY-4.0" }
+keywords = ["benchmark", "chinese", "industrial-safety", "qa", "evaluation", "llm"]
+
+dependencies = [
+    # 抓取
+    "httpx>=0.27",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "pypdf>=4.0",
+    "pdfplumber>=0.11",
+    "tenacity>=9.0",
+    # 蒸馏 / LLM
+    "openai>=1.40",
+    "tiktoken>=0.7",
+    # 数据处理
+    "datasets>=2.20",
+    "pandas>=2.2",
+    "pydantic>=2.7",
+    "tqdm>=4.66",
+    "rapidfuzz>=3.9",
+    # HF / Git
+    "huggingface_hub>=0.24",
+    # 抽检 Web
+    "flask>=3.0",
+    # 工具
+    "python-dotenv>=1.0",
+    "rich>=13.7",
+    "click>=8.1",
+]
+
+[project.optional-dependencies]
+eval = [
+    "transformers>=4.43",
+    "torch>=2.3",
+    "accelerate>=0.32",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
