@@ -154,7 +154,7 @@
 
 ### 6.1 How will the dataset be distributed?
 
-- HuggingFace Datasets：`teee32/wh-bench-v0.1`
+- HuggingFace Datasets：`kksk2312/wh-bench-v0.1`
 - GitHub：`teee32/wh-bench-v0.1`（源码 + 中间产物）
 
 ### 6.2 License

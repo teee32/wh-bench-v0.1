@@ -3,7 +3,7 @@
 > A small, high-quality, **dual-LLM-jury verified** Chinese legal-regulation QA benchmark for evaluating instruction-tuned LLMs on Chinese law knowledge.
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![HuggingFace](https://img.shields.io/badge/🤗-Dataset-yellow)](https://huggingface.co/datasets/teee32/wh-bench-v0.1)
+[![HuggingFace](https://img.shields.io/badge/🤗-Dataset-yellow)](https://huggingface.co/datasets/kksk2312/wh-bench-v0.1)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black)](https://github.com/teee32/wh-bench-v0.1)
 
 ## 概览
@@ -58,7 +58,7 @@
 ```python
 from datasets import load_dataset
 
-ds = load_dataset("teee32/wh-bench-v0.1")
+ds = load_dataset("kksk2312/wh-bench-v0.1")
 print(ds)
 # DatasetDict({
 #   train: Dataset({features: [...], num_rows: 239})
@@ -130,7 +130,7 @@ python scripts/07_finalize.py        # 剔除 + split + 落地
   title  = {wh-bench v0.1: A Dual-Jury Verified Chinese Legal-Regulation QA Benchmark},
   author = {teee32},
   year   = {2026},
-  url    = {https://huggingface.co/datasets/teee32/wh-bench-v0.1},
+  url    = {https://huggingface.co/datasets/kksk2312/wh-bench-v0.1},
   note   = {300 QA pairs across 50 Chinese laws and regulations, verified by GPT-5.5 + Claude Sonnet jury}
 }
 ```
