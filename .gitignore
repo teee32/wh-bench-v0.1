@@ -39,3 +39,4 @@ data/raw/.gitkeep
 data/processed/.gitkeep
 data/distilled/.gitkeep
 data/filtered/.gitkeep
+reports/eval_*
